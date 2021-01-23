@@ -1,0 +1,48 @@
+
+
+# 데이터 시각화 (Seaborn Tutorial) 
+https://seaborn.pydata.org/tutorial.html (공식 홈페이지) 
+https://www.kaggle.com/ravichaubey1506/complete-data-visualization-tutorial-seaborn
+https://lovit.github.io/visualization/2019/11/22/seaborn_tutorial/ 
+
+# 이전에 정리한 파이토치 관련 사이트
+https://www.kaggle.com/ankitjha/practical-deep-learning-using-pytorch
+https://sensibilityit.tistory.com/511
+https://www.kaggle.com/dhananjay3/image-segmentation-from-scratch-in-pytorch 
+ 
+# 채굴한 주요사이트
+TCP School : http://www.tcpschool.com/ 
+Go Lab : http://machinelearningkorea.com/ 
+Pytorch : https://github.com/GunhoChoi (파이토치강의 뿐만 아니라 다양한게 많다)
+T Academy : https://tacademy.skplanet.com/live/player/listLecture.action
+Python Github : https://github.com/Pitsillides91/Python-Tutorials 
+
+
+[T Academy] Feature Engineering 강의
+
+pandas  
+csv를 로드하면 memory 점유가 커지는 이유는 최대치로 잡기 때문이다. 
+describe(), info()는 기본으로 한번 때린다. 
+head(), tail()이 아닌 sample(10)으로 dataframe을 탐색하는 걸 추천한다. 
+dataframe.col1 이 좋을까? dataframe['col1']이 좋을까? => 장단점이있다. 
+map() 함수는 series에 적용하고, apply() 함수는 dataframe에 적용한다.
+조건에 맞는 데이터 추출방법은 df.loc[조건1, :] 이런식으로 한다. 
+
+결측치 처리
+컬럼을 통째로 날려버릴까? Row를 전체를 날려버릴까?
+아니면.. 중요할 것 같다면 평균으로 대체할까? 아님 모델을 만들어서 대체할까?
+
+아웃라이어 처리
+극단적인 이상치는 제거하는게 맞다.
+하지만 무작정 제거하는게 맞을까? 이상치가 어떤 y값에 영향을 준다면? 패턴 및 군집을 갖는다면? 
+
+스케일링
+min-max, standard 중에서 뭘하지?
+둘다 아웃라이어에 취약하다. 그리고 갑론을박이 많지만 둘다 써보고 좋은 걸 쓰는게 맞다.
+스케일링 적용시에는 train데이터에 fit하고 test데이터에는 transform만 한다. 
+=> "test는 미래의 데이터다"라고 가정. (test데이터의 분포는 아무도 모른다)
+
+pandas series 함수
+values_count() : 각 category별 record수 반환
+zip() : 동일한 length를 갖는 list type A,B가 들어갔을 때 서로 연결시켜주는 함수
+zip() -> map() 조합으로 label_encoding을 대체하기도 한다 (sklearn의 label-encoding이 느리다는데?)
