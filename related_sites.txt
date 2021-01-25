@@ -32,8 +32,3 @@ https://www.kaggle.com/matleonard/feature-selection :: L1 regularization 참고
 https://www.kaggle.com/prashant111/comprehensive-guide-on-feature-selection :: BIBLE 느낌
 https://www.kaggle.com/harangdev/feature-selection :: one-shot vs RFE
 https://www.kaggle.com/mashimo/features-selection-for-multiple-linear-regression :: statsmodel (MLR 해석)
-
-
-
-
-
